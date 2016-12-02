@@ -1,0 +1,50 @@
+
+// tablet
+@media (min-width: 768px) and (max-width: 1024px){
+
+}
+
+
+// mobile
+@media (max-width: 767px){
+
+  #header, #footer{
+    margin:0;
+  }
+
+  .main{
+    margin:0px;
+
+    .titlebox{
+      .title{
+        font-size:65px;
+        padding-left:4%;
+      }
+    }
+
+    .row{
+
+      img{
+        height:350px;
+        width:100%;
+        float:none;
+      }
+
+      .info{
+        float:none;
+      }
+    }
+
+    .rowreverse{
+
+      img{
+        float:none;
+        width:100%;
+      }
+
+      .info{
+        float:none;
+      }
+    }
+  }
+}

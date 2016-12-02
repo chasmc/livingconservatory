@@ -1,5 +1,4 @@
-@import "partials/header";
-@import "partials/footer";
+@import "partials/headerfooter";
 @import "partials/home";
 @import "partials/volunteer";
 @import "partials/support";
@@ -59,3 +58,5 @@ body{
   }
  }
 }
+
+@import "partials/volunteermediaqueries.scss";

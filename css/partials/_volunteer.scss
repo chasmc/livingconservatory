@@ -14,12 +14,26 @@ body h1 h2 h3 p{
   margin:0 13%;
 
   .hero{
-    background-image:url("../images/hero.jpg");
-    height:200px;
+    background:
+      linear-gradient(
+        rgba(black, 0.35),
+        rgba(black, 0.35)
+      ),
+      url("../images/hero.jpg");
+    height:400px;
     width:100%;
     background-size:cover;
     background-position:cover;
+    position:relative;
   }
+    .hero{
+      img{
+        position:absolute;
+        margin-left:10%;
+        margin-top:10%;
+      }
+    }
+
 
   .titlebox{
     .title{
