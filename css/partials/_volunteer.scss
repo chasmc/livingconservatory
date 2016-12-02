@@ -1,0 +1,70 @@
+@mixin largetitles{
+  font-family:source sans pro;
+  font-size:130px;
+  text-transform:uppercase;
+}
+
+body h1 h2 h3 p{
+  margin:0;
+}
+
+
+
+.main{
+  margin:0 13%;
+
+  .hero{
+    background-image:url("../images/hero.jpg");
+    height:200px;
+    width:100%;
+    background-size:cover;
+    background-position:cover;
+  }
+
+  .titlebox{
+    .title{
+      @include largetitles;
+      font-size:85px;
+      color:white;
+      background-color:black;
+      margin:0;
+      padding-left:2%;
+    }
+  }
+
+.row{
+  clear:both;
+  img{
+    height:350px;
+    width:50%;
+    float:left;
+  }
+  .info{
+    float:right;
+    h1{
+      @include largetitles;
+      text-align:center;
+      margin-bottom:0;
+      margin-top:25%;
+    }
+  }
+}
+
+.rowreverse{
+  clear:both;
+  img{
+    height:350px;
+    width:50%;
+    float:right;
+  }
+  .info{
+    float:left;
+  }
+  h1{
+    @include largetitles;
+    text-align:center;
+    margin-bottom:0;
+    margin-top:25%;
+  }
+ }
+}
