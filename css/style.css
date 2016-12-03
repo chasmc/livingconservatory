@@ -3,6 +3,10 @@
   background-color: black;
   margin: 0 13%;
   clear: both; }
+  #header ul li, #footer ul li {
+    display: inline-block;
+    color: white;
+    font-size: 48px; }
 
 body h1 h2 h3 p {
   margin: 0; }
@@ -14,51 +18,47 @@ body h1 h2 h3 p {
     height: 400px;
     width: 100%;
     background-size: cover;
-    background-position: cover;
+    background-position: center;
     position: relative; }
-  .main .hero img {
-    position: absolute;
-    margin-left: 10%;
-    margin-top: 10%; }
+    .main .hero .logo {
+      position: absolute;
+      margin-left: 10%;
+      margin-top: 10%; }
+    .main .hero .mobilelogo {
+      display: none; }
   .main .titlebox .title {
     font-family: source sans pro;
     font-size: 130px;
     text-transform: uppercase;
     font-size: 85px;
-    color: white;
-    background-color: black;
+    color: black;
+    background-color: white;
     margin: 0;
     padding-left: 2%; }
   .main .row {
-    clear: both; }
+    display: flex; }
     .main .row img {
-      height: 350px;
-      width: 50%;
-      float: left; }
+      height: 350px; }
     .main .row .info {
-      float: right; }
+      display: flex;
+      margin: 0 auto; }
       .main .row .info h1 {
         font-family: source sans pro;
         font-size: 130px;
-        text-transform: uppercase;
-        text-align: center;
-        margin-bottom: 0;
-        margin-top: 25%; }
+        text-transform: uppercase; }
   .main .rowreverse {
-    clear: both; }
+    display: flex;
+    flex-direction: row-reverse; }
     .main .rowreverse img {
-      height: 350px;
-      width: 50%;
-      float: right; }
+      height: 350px; }
     .main .rowreverse .info {
-      float: left; }
-    .main .rowreverse h1 {
-      font-family: source sans pro;
-      font-size: 130px;
-      text-transform: uppercase;
-      text-align: center;
-      margin-bottom: 0;
-      margin-top: 25%; }
+      display: flex;
+      margin: 0 auto; }
+      .main .rowreverse .info h1 {
+        font-family: source sans pro;
+        font-size: 130px;
+        text-transform: uppercase;
+        justify-content: space-around; }
 
 body {
   margin: 0; }
@@ -106,19 +106,23 @@ body {
 
   .main {
     margin: 0px; }
+    .main .hero .logo {
+      display: none; }
+    .main .hero .mobilelogo {
+      display: block; }
     .main .titlebox .title {
       font-size: 65px;
       padding-left: 4%; }
-    .main .row img {
-      height: 350px;
-      width: 100%;
-      float: none; }
-    .main .row .info {
-      float: none; }
-    .main .rowreverse img {
-      float: none;
-      width: 100%; }
-    .main .rowreverse .info {
-      float: none; } }
+    .main .row {
+      display: block; }
+      .main .row img {
+        height: 350px;
+        width: 100%; }
+      .main .row .info {
+        width: 100%; }
+    .main .rowreverse {
+      display: block; }
+      .main .rowreverse img {
+        width: 100%; } }
 
 /*# sourceMappingURL=style.css.map */
