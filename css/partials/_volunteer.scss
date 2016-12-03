@@ -1,7 +1,17 @@
+@mixin verticalalign{
+  position: relative;
+  top: 40%;
+  transform: translateY(-40%)
+}
+
 @mixin largetitles{
   font-family:source sans pro;
-  font-size:130px;
+  color:white;
+  font-size:80px;
   text-transform:uppercase;
+  text-align:center;
+  background-color:rgba(black, .3);
+  margin:0;
 }
 
 body h1 h2 h3 p{
@@ -13,24 +23,27 @@ body h1 h2 h3 p{
 .main{
   margin:0 13%;
 
-  .hero{
-    background:
-      linear-gradient(
-        rgba(black, 0.35),
-        rgba(black, 0.35)
-      ),
-      url("../images/hero.jpg");
-    height:400px;
-    width:100%;
-    background-size:cover;
-    background-position:center;
-    position:relative;
-
-    .logo{
-      position:absolute;
-      margin-left:10%;
-      margin-top:10%;
-    }
+  // .hero{
+  //   background:
+  //     linear-gradient(
+  //       rgba(black, 0.35),
+  //       rgba(black, 0.35)
+  //     ),
+  //     url("../images/hero.jpg");
+  //   height:300px;
+  //   width:100%;
+  //   background-size:cover;
+  //   background-position:center;
+  //   position:relative;
+  //   box-sizing:border-box;
+  //   border: 4px solid white;
+  //   margin-top:20px;
+  //
+  //   .logo{
+  //     position:absolute;
+  //     margin-left:10%;
+  //     margin-top:5%;
+  //   }
 
     .mobilelogo{
       display:none;
@@ -38,47 +51,79 @@ body h1 h2 h3 p{
   }
 
 
+  .image{
+    box-sizing:border-box;
+    border: 4px solid white;
+    height:450px;
+    width:25%;
+    margin-bottom:20px;
+  }
 
-  .titlebox{
-    .title{
-      @include largetitles;
-      font-size:85px;
-      color:black;
-      background-color:white;
+
+  .image1{
+    background:url("../images/james.jpg");
+    background-size:cover;
+    background-position:center;
+    height:400px;
+    width:100%;
+    margin:20px 0;
+
+    .heroinfobox{
+      background-color:rgba(black, .3);
       margin:0;
-      padding-left:2%;
+      margin-top:10%;
+      padding:1%;
+
+    h1{
+      @include largetitles;
+      background-color:transparent;
     }
+
+    .logo{
+      margin-left:30%;
+      margin-top:15px;
+      height:100px;
+    }
+   }
   }
 
-.row{
-  display:flex;
-  img{
-    height:350px;
-  }
-  .info{
-    display:flex;
-    margin:0 auto;
+  .image2{
+    clear:both;
+    background-image:url("../images/plant.jpg");
+    background-size:cover;
+    background-position:center;
+    float:left;
     h1{
       @include largetitles;
     }
   }
-}
 
-.rowreverse{
-  display:flex;
-  flex-direction:row-reverse;
-  img{
-    height:350px;
-  }
-  .info{
-    display:flex;
-    margin:0 auto;
-
+  .image3{
+    background-image:url("../images/butterfly.jpg");
+    background-size:cover;
+    background-position:center;
+    float:right;
     h1{
       @include largetitles;
-      justify-content:space-around;
     }
   }
 
- }
-}
+  .image4{
+    background-image:url("../images/sloth 2.jpg");
+    background-size:cover;
+    background-position:center;
+    float:left;
+    h1{
+      @include largetitles;
+    }
+  }
+
+  .image5{
+    background-image:url("../images/rainforest.jpg");
+    background-size:cover;
+    background-position:center;
+    float:right;
+    h1{
+      @include largetitles;
+    }
+  }

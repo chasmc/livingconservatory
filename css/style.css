@@ -1,7 +1,6 @@
 #header, #footer {
   height: 100px;
   background-color: black;
-  margin: 0 13%;
   clear: both; }
   #header ul li, #footer ul li {
     display: inline-block;
@@ -13,52 +12,98 @@ body h1 h2 h3 p {
 
 .main {
   margin: 0 13%; }
-  .main .hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("../images/hero.jpg");
-    height: 400px;
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    position: relative; }
-    .main .hero .logo {
-      position: absolute;
-      margin-left: 10%;
-      margin-top: 10%; }
-    .main .hero .mobilelogo {
-      display: none; }
-  .main .titlebox .title {
-    font-family: source sans pro;
-    font-size: 130px;
-    text-transform: uppercase;
-    font-size: 85px;
-    color: black;
-    background-color: white;
+  .main .mobilelogo {
+    display: none; }
+
+.image {
+  box-sizing: border-box;
+  border: 4px solid white;
+  height: 450px;
+  width: 25%;
+  margin-bottom: 20px; }
+
+.image1 {
+  background: url("../images/james.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  width: 100%;
+  margin: 20px 0; }
+  .image1 .heroinfobox {
+    background-color: rgba(0, 0, 0, 0.3);
     margin: 0;
-    padding-left: 2%; }
-  .main .row {
-    display: flex; }
-    .main .row img {
-      height: 350px; }
-    .main .row .info {
-      display: flex;
-      margin: 0 auto; }
-      .main .row .info h1 {
-        font-family: source sans pro;
-        font-size: 130px;
-        text-transform: uppercase; }
-  .main .rowreverse {
-    display: flex;
-    flex-direction: row-reverse; }
-    .main .rowreverse img {
-      height: 350px; }
-    .main .rowreverse .info {
-      display: flex;
-      margin: 0 auto; }
-      .main .rowreverse .info h1 {
-        font-family: source sans pro;
-        font-size: 130px;
-        text-transform: uppercase;
-        justify-content: space-around; }
+    margin-top: 10%;
+    padding: 1%; }
+    .image1 .heroinfobox h1 {
+      font-family: source sans pro;
+      color: white;
+      font-size: 80px;
+      text-transform: uppercase;
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.3);
+      margin: 0;
+      background-color: transparent; }
+    .image1 .heroinfobox .logo {
+      margin-left: 30%;
+      margin-top: 15px;
+      height: 100px; }
+
+.image2 {
+  clear: both;
+  background-image: url("../images/plant.jpg");
+  background-size: cover;
+  background-position: center;
+  float: left; }
+  .image2 h1 {
+    font-family: source sans pro;
+    color: white;
+    font-size: 80px;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin: 0; }
+
+.image3 {
+  background-image: url("../images/butterfly.jpg");
+  background-size: cover;
+  background-position: center;
+  float: right; }
+  .image3 h1 {
+    font-family: source sans pro;
+    color: white;
+    font-size: 80px;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin: 0; }
+
+.image4 {
+  background-image: url("../images/sloth 2.jpg");
+  background-size: cover;
+  background-position: center;
+  float: left; }
+  .image4 h1 {
+    font-family: source sans pro;
+    color: white;
+    font-size: 80px;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin: 0; }
+
+.image5 {
+  background-image: url("../images/rainforest.jpg");
+  background-size: cover;
+  background-position: center;
+  float: right; }
+  .image5 h1 {
+    font-family: source sans pro;
+    color: white;
+    font-size: 80px;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin: 0; }
 
 body {
   margin: 0; }
