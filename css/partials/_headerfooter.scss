@@ -1,12 +1,50 @@
-#header, #footer{
+#header {
   height:100px;
   background-color:black;
   clear:both;
   ul{
+    margin:0;
+    margin-right:2%;
+    text-align:center;
     li{
       display:inline-block;
-      color:white;
-      font-size:48px;
+      font-size:30px;
+      font-family:source sans pro;
+      font-weight:black;
+      text-transform:uppercase;
+      padding:2% 10% 0 10%;
+      a{
+        text-decoration:none;
+        color:white;
+      }
+    }
+  }
+}
+
+#footer{
+  height:100px;
+  background-color:black;
+  clear:both;
+
+  img{
+    float:left;
+    height:75px;
+    padding:1%;
+  }
+  ul{
+    margin:0;
+    padding:3% 0 0 5%;
+    margin-left:3%;
+    float:left;
+    word-spacing:8rem;
+    li{
+      display:inline-block;
+      font-size:20px;
+      font-family:source sans pro;
+      a{
+        text-decoration:none;
+        color:white;
+      }
     }
   }
 }
