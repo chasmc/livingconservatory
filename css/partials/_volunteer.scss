@@ -10,102 +10,107 @@
   font-size:80px;
   text-transform:uppercase;
   text-align:center;
-  background-color:rgba(black, .3);
   margin:0;
 }
 
-body h1 h2 h3 p{
+body, h1, h2, h3, p{
   margin:0;
 }
 
 
 
 .main{
-  margin:0 13%;
+  margin:0;
 
-  // .hero{
-  //   background:
-  //     linear-gradient(
-  //       rgba(black, 0.35),
-  //       rgba(black, 0.35)
-  //     ),
-  //     url("../images/hero.jpg");
-  //   height:300px;
-  //   width:100%;
-  //   background-size:cover;
-  //   background-position:center;
-  //   position:relative;
-  //   box-sizing:border-box;
-  //   border: 4px solid white;
-  //   margin-top:20px;
-  //
-  //   .logo{
-  //     position:absolute;
-  //     margin-left:10%;
-  //     margin-top:5%;
-  //   }
-
-    .mobilelogo{
-      display:none;
-    }
+  .volunteer{
+    @include largetitles;
+    font-size:150px;
+    color:white;
+    padding-top:100px;
+    background-image:
+    linear-gradient(
+          rgba(black, .5),
+          rgba(black, .5)
+        ),
+    url("../images/james.jpg");
+    background-size:cover;
+    background-position:center;
+    height:300px;
   }
-
+}
 
   .image{
     box-sizing:border-box;
     border: 4px solid white;
     height:450px;
     width:25%;
+    margin-top:20px;
     margin-bottom:20px;
-  }
 
+    .infotitles{
+      @include largetitles;
+      margin-top:99%;
+      padding-top:20%;
 
-  .image1{
-    background:url("../images/james.jpg");
+      a{
+        text-decoration:none;
+        color:white;
+      }
+    }
+ }
+
+  .heroimage{
+    background:
+    linear-gradient(
+          rgba(black, .3),
+          rgba(black, .3)
+        ),
+    url("../images/rainforest.jpg");
     background-size:cover;
-    background-position:center;
-    height:400px;
+    background-position:bottom;
+    height:450px;
     width:100%;
-    margin:20px 0;
+    margin-bottom:20px;
 
     .heroinfobox{
-      background-color:rgba(black, .3);
       margin:0;
-      margin-top:10%;
       padding:1%;
 
-    h1{
-      @include largetitles;
-      background-color:transparent;
+    .logo{
+      display:block;
+      margin:0 auto;
+      margin-top:170px;
     }
 
-    .logo{
-      margin-left:30%;
-      margin-top:15px;
-      height:100px;
+    .mobilelogo{
+      display:none;
     }
    }
   }
 
-  .image2{
+  .image1{
     clear:both;
     background-image:url("../images/plant.jpg");
     background-size:cover;
     background-position:center;
     float:left;
-    h1{
-      @include largetitles;
-    }
+    position:relative;
   }
 
-  .image3{
+  .image2{
     background-image:url("../images/butterfly.jpg");
     background-size:cover;
     background-position:center;
-    float:right;
-    h1{
-      @include largetitles;
-    }
+    float:left;
+    position:relative;
+  }
+
+  .image3{
+    background-image:url("../images/rainforest.jpg");
+    background-size:cover;
+    background-position:center;
+    float:left;
+    position:relative;
   }
 
   .image4{
@@ -113,17 +118,5 @@ body h1 h2 h3 p{
     background-size:cover;
     background-position:center;
     float:left;
-    h1{
-      @include largetitles;
-    }
-  }
-
-  .image5{
-    background-image:url("../images/rainforest.jpg");
-    background-size:cover;
-    background-position:center;
-    float:right;
-    h1{
-      @include largetitles;
-    }
+    position:relative;
   }

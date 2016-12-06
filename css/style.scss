@@ -3,60 +3,6 @@
 @import "partials/volunteer";
 @import "partials/support";
 
-@mixin largetitles{
-  font-family:source sans pro;
-  font-size:130px;
-  text-transform:uppercase;
-}
 
-body{
-  margin:0;
-}
-
-.main{
-  margin:0 13%;
-
-  .title{
-    h1{
-      @include largetitles;
-    }
-  }
-
-.row{
-  clear:both;
-  img{
-    height:350px;
-    width:50%;
-    float:left;
-  }
-  .info{
-    float:right;
-    h1{
-      @include largetitles;
-      text-align:center;
-      margin-bottom:0;
-      margin-top:25%;
-    }
-  }
-}
-
-.rowreverse{
-  clear:both;
-  img{
-    height:350px;
-    width:50%;
-    float:right;
-  }
-  .info{
-    float:left;
-  }
-  h1{
-    @include largetitles;
-    text-align:center;
-    margin-bottom:0;
-    margin-top:25%;
-  }
- }
-}
 
 @import "partials/volunteermediaqueries.scss";
